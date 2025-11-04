@@ -20,15 +20,14 @@
     },
     "suggest": {
         "cakephp/bake": "Used by SwaggerBake bake templates",
-        "friendsofcake/search": "Required by SwaggerBake #[OpenApiSearch]",
-        "mixerapi/mixerapi": "Streamline development of your API with MixerAPI"
+        "friendsofcake/search": "Required by SwaggerBake #[OpenApiSearch]"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.0",
         "friendsofcake/search": "^7.0",
         "cakephp/authentication": "^3.0",
-        "cakephp/cakephp-codesniffer": "^5.0",
-        "phpstan/phpstan": "^1.8.5",
+        "cakephp/cakephp-codesniffer": "~5.3.0",
+        "phpstan/phpstan": "~1.12.0",
         "phpmd/phpmd": "^2.10",
         "cakephp/bake": "^3.0",
         "cakephp/debug_kit": "^5.0",
@@ -60,9 +59,7 @@
         "phpstan": "phpstan analyse src/",
         "test": "phpunit --colors=always",
         "phpmd": "phpmd src/ ansi phpmd.xml",
-        "coverage": "phpunit --coverage-html coverage-reports/",
-        "grumphp-init": "grumphp git:init",
-        "grumphp": "grumphp"
+        "coverage": "phpunit --coverage-html coverage-reports/"
     },
     "support": {
         "issues": "https://github.com/cnizzardini/cakephp-swagger-bake/issues",
@@ -78,6 +75,7 @@
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
-        }
+        },
+        "prefer-stable": true
     }
 }
